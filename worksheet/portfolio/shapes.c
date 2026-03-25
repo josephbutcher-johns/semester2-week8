@@ -34,7 +34,7 @@ float lineLength( Line l ){
     float p1a = l.p[0].x - l.p[1].x;
     float p2a = l.p[0].y - l.p[1].y;
     float length = sqrt((p1a * p1a) + (p2a *p2a));
-    return length
+    return length;
 }       
 
 
@@ -47,7 +47,7 @@ float triangleArea( Triangle t ){
     float x3 = t.p[2].x;
     float y3 = t.p[2].y;
     float area = 0.5f * ((x1 * (y2-y3)) + (x2 * (y3-y1)) + (x3 * (y1-y2)));
-    return area;
+    return -area;
 }
 
 bool samePoint(Point p1, Point p2) {
